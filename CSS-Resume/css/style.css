@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Francois+One|Khula|Marvel|Allura');
+
+
+body, html {
+margin-left:2%;
+margin-right:2%;
+margin-bottom:2%;
+margin-top:1%;
+}
+  p {
+      background-color: white;
+      font-family: 'Khula', sans-serif;
+      color: #161619;
+      margin-left: 15px;
+      margin: 0;
+    }
+
+  div {
+    margin: 0;
+    margin-bottom: 0;
+    color: #161619;
+  }
+
+
+  h1 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 70px;
+      color: #118727;
+      margin-left: 60px;
+      margin: 0;
+    }
+
+
+  h2 {
+      color: #118727;
+      font-family: 'Francois One', sans-serif;
+      margin-left: 15px;
+    }
+
+
+  h3 {
+        color: #1da81a;
+        font-family: 'Arial', sans-serif;
+        margin-left: 15px;
+        margin: 5px;
+    }
+
+
+    h4 {
+        color: #161619;
+        font-family: 'Arial', sans-serif;
+        margin-left: 15px;
+        margin: 5px;
+    }
+
+    h5 {
+      color: #161619;
+      font-family: 'Allura', cursive;
+      font-size: 40px;
+      margin-left: 150px;
+      margin: 0;
+    }
+
+    nav {
+        background-color: #1da81a;
+        font-family: 'Marvel', sans-serif;
+        padding: 3px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    nav ul {
+       padding-left: 0;
+       list-style: none;
+       color: white;
+     }
+
+     nav li {
+       color: white;
+       display: inline-block;
+       font-size: 20px
+       color: white;
+       margin-right: 40px;
+     }
+
+     nav a {
+       color: white;
+       display: inline-block;
+       text-decoration: none;
+     }
+
+     nav a:hover {
+       text-decoration: underline;
+     }
+
+
+     ul{
+       margin-bottom: 5px;
+     }
+
+    ul li {
+      list-style: circle;
+      color: #161619;
+      margin: 0;
+    }
+
+
+  li {
+      font-family: 'Khula', sans-serif;
+      color: #161619;
+      margin: 0;
+    }
+
+
+  a {
+      color: blue;
+      text-decoration: none;
+    }
+
+
+  a:hover {
+      color: darkblue;
+      text-decoration: underline;
+    }
+
+    img {
+        float: right;
+        clear: both;
+        margin-right: 100px;
+        border-left: 5px;
+        border-right: 5px;
+        border-top: 5px;
+        border-bottom: 15px;
+        border-color: gray;
+        box-shadow: 5px;
+
+    }
+
+    * {
+       box-sizing: border-box;
+     }
+
+     #header {
+       grid-area: header;
+     }
+     #picture {
+       grid-area: picture;
+     }
+     #infobar {
+       grid-area: infobar;
+     }
+     #education {
+       grid-area: education;
+     }
+     #experience {
+       grid-area: experience;
+     }
+     #skills {
+       grid-area: skills;
+     }
+     #activities {
+       grid-area: activities;
+     }
+     #leadership {
+       grid-area: leadership;
+     }
+     #community {
+       grid-area: community;
+     }
+     #hobbies {
+       grid-area: hobbies;
+     }
+
+     .grid {
+       display: grid;
+       grid-template-columns: 2fr [content start] 2fr [content end];
+       grid-template-rows: auto [content start] auto [content end];
+       grid-gap: 20px;
+
+       grid-template-areas:
+       "header header"
+       "infobar infobar"
+       "education skills"
+       "experience activities"
+       "experience leadership"
+       "experience community"
+     }
+
+     .grid div {
+       border: 1px solid;
+       border-radius: 3px;
+       background-color: white;
+       padding: 0.2rem;
+       color: white;
+     }
+
+     .grid div:nth-of-type(2n) {
+       background-color: white;
+     }
