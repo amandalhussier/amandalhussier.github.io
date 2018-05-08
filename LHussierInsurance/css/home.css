@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Barlow');
+
+body, html {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
+
+
+  .bg {
+      background-image: url("../../images/background.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+  div {
+    color: white;
+    background-color: none;
+  }
+
+
+  h1 {
+      font-family: 'Abel', sans-serif;
+      font-size: 60px;
+      margin: 1;
+      color: white;
+      background-color: none;
+    }
+
+
+  h2 {
+      color: white;
+      font-family: 'Francois One', sans-serif;
+      margin-left: 15px;
+      background-color: none;
+    }
+
+
+  h3 {
+        color: white;
+        font-family: 'Arial', sans-serif;
+        background-color: none;
+    }
+
+
+    nav {
+        background-color: none;
+        color: white;
+        font-family: 'Marvel', sans-serif;
+    }
+
+    nav ul {
+       padding-left: 0;
+       list-style: none;
+       color: white;
+       background-color: none;
+     }
+
+     nav li {
+       color: white;
+       display: inline-block;
+       font-size: 18px;
+       margin-right: 80px;
+       background-color: none;
+     }
+
+     nav a {
+       color: white;
+       display: inline-block;
+       text-decoration: none;
+       background-color: none;
+     }
+
+     nav a:hover {
+       text-decoration: underline;
+     }
+
+     ul{
+       color: white;
+       background-color: none;
+       font-size: 16px;
+     }
+
+    ul li {
+      list-style: circle;
+      color: white;
+      background-color: none;
+    }
+
+
+  li {
+      color: #191970;
+      background-color: none;
+    }
+
+
+  a {
+      color: #191970;
+      text-decoration: none;
+      background-color: none;
+    }
+
+
+  a:hover {
+      color: #191970;
+      text-decoration: underline;
+    }
+
+    p {
+      margin: -10px;
+    }
+
+
+    * {
+       box-sizing: border-box;
+     }
+
+     #header {
+       grid-area: header;
+     }
+     #picture {
+       grid-area: picture;
+     }
+     #infoleft {
+       grid-area: infoleft;
+       margin-right: 60px;
+     }
+     #inforight {
+         grid-area: inforight;
+     }
+     #footer {
+       grid-area: footer;
+     }
+     #nav {
+       grid-area: nav;
+       align-content: center;
+     }
+
+
+     .grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+
+       grid-gap: 20px;
+
+       grid-template-areas:
+       "nav nav nav"
+       ". . ."
+       ". header ."
+       ". . ."
+       "footer footer footer"
+     }
+
+     .grid div {
+       border-radius: 3px;
+       background-color: none;
+       padding: 0.2rem;
+       color: white;
+     }
+
+     .grid div:nth-of-type(2n) {
+       background-color: none;
+     }
